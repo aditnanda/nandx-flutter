@@ -1,0 +1,58 @@
+name: nandx
+description: "NANDX - Secure SMB Streaming & File Vault"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  riverpod: ^2.6.1
+  flutter_riverpod: ^2.6.1
+  get_it: ^8.0.3
+  flutter_secure_storage: ^9.2.4
+  local_auth: ^2.3.0
+  flutter_vlc_player: ^7.4.4
+  path_provider: ^2.1.5
+  file_picker: ^10.3.2
+  permission_handler: ^12.0.1
+  equatable: ^2.0.7
+  collection: ^1.19.1
+  intl: ^0.20.2
+  crypto: ^3.0.6
+  smb_connect: ^0.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/branding/nandx_icon.png"
+  adaptive_icon_background: "#052E2B"
+  adaptive_icon_foreground: "assets/branding/nandx_icon_foreground.png"
+  remove_alpha_ios: true
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/branding/nandx_icon.png"
+    background_color: "#052E2B"
+    theme_color: "#0A8F6A"
+  windows:
+    generate: true
+    image_path: "assets/branding/nandx_icon.png"
+    icon_size: 256
+  macos:
+    generate: true
+    image_path: "assets/branding/nandx_icon.png"
